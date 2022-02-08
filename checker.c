@@ -8,6 +8,6 @@ int main() {
   assert(batteryIsOk(25, 70, 0.7));
   /* Negative Testcases */
   assert(!batteryIsOk(-0.5, 75, 0.9));
-  assert(!batteryIsOk(45.5, 95, 0.6));
+  assert(!batteryIsOk(45.5, 15, 0.6));
   assert(!batteryIsOk(25, 85, 0));
 }
