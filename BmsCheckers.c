@@ -1,6 +1,6 @@
 #include "BmsCheckers.h"
 
-float temperatureCheck(float temperature)
+float IsTemperatureOk(float temperature)
 {
   if(temperature < TEMPERATURE_MIN)
   {
