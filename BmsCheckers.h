@@ -13,7 +13,7 @@
 #define CHARGE_RATE_MAX 0.8
 
 /* Declarations */
-float temperatureCheck(float temperature);
+float IsTemperatureOk(float temperature);
 float statusOfCharge(float soc);
 float rateOfCharge(float chargeRate);
 
