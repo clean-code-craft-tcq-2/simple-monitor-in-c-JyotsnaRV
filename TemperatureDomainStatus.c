@@ -1,6 +1,6 @@
 #include "BmsCheckers.h"
 
-int temperatureMax[]={TEMP_RESIDENTIAL_MAX, TEMP_CONSUMER_MAX, TEMP_EV_MAX};
+int temperatureMax[]= {TEMPERATURE_RESIDENTIAL_MAX, TEMPERATURE_CONSUMER_MAX, TEMPERATURE_EV_MAX};
 /*
  **********************************************************************************************************************
  * Service name         : temperatureSectorStatus
