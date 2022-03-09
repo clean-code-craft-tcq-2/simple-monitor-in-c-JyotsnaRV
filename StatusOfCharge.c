@@ -28,7 +28,7 @@ int statusOfCharge(float soc)
     dataRange.socInputParam = socRange.inputParam;
     dataRange.socMinBreach = socRange.minTolerance;
     dataRange.socMaxBreach = socRange.maxTolerance;
-    dataAccumalator(socRange);
+    dataAcquisition(socRange);
   }
   dataRange.retstatus = retStatus;
  return retStatus;
