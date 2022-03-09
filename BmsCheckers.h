@@ -46,5 +46,12 @@ typedef struct
 float IsTemperatureOk(float temperature,enum MajorDomain domainType, int temperatureSIUnit);
 float statusOfCharge(float soc);
 float rateOfCharge(float chargeRate);
+int temperatureStatus(float temperature, float compareTemp, int tempSIUnit) ;
+
+toleranceRange_st checkTolerance(toleranceRange_st range);
+void warningGenerator(toleranceRange_st warningType);
+void ParamToString(char* bffr, toleranceRange_st inputDetail);
+void dataAcquisition(toleranceRange_st range);
+unsigned int controlAction(void);
 
 #endif /* BMS_CHECKERS_H */
