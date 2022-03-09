@@ -14,5 +14,5 @@
  ***********************************************************************************************************************
  */
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-  return ( (IsTemperatureOk(temperature)) && (statusOfCharge(soc)) && (rateOfCharge(chargeRate)) );
+  return ( (IsTemperatureOk(temperature,domain,temperatureSIUnit)) && (statusOfCharge(soc)) && (rateOfCharge(chargeRate)) );
 }
