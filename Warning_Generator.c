@@ -10,12 +10,12 @@ toleranceRange_st checkTolerance(toleranceRange_st range)
   range.maxTolerance -= CALCTOLERANCE(range.maxTolerance);
   if(range.inputParameter <= range.minTolerance)
   {
-	  range.dataVal = MIN;
+	  range.dataVal = BINARY_MIN;
 	  dataRange.breachMinType = range.dataVal;
   }
   if(range.inputParameter >= range.maxTolerance)
   {
-	  range.dataVal = MAX;
+	  range.dataVal = BINARY_MAX;
 	  dataRange.breachMaxType = range.dataVal;
   }
   return range;
@@ -25,13 +25,13 @@ void ParamToString(char* buffer, toleranceRange_st inputDetails)
 {
   switch(inputDetails.dataVal)
   {
-    case MIN:
+    case BINARY_MIN:
       {
         sprintf(buffer, "%s ",
         MinToleranceNames[inputDetails.paramType]);
       }
       break;
-    case MAX:
+    case BINARY_MAX:
       {
         sprintf(buffer, "%s ",
         MaxToleranceNames[inputDetails.paramType]);
