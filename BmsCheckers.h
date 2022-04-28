@@ -27,6 +27,8 @@
 #define FAHR 1 /* Fahrenheit */
 #define CELTOFAHR(Y) (float)((Y*(9/5))+32)
 
+extern unsigned int accumulateReportCnt;
+
 /* Enumerations */
 enum MajorDomain {RESIDENTIAL, CONSUMER, EV};
 typedef enum {TEMPERATURE, SOC, ROC} BmsParameter;
