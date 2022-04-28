@@ -1,24 +1,5 @@
 #include "BmsCheckers.h"
 
-float IsTemperatureOk(float temperature)
-{
-  if(temperature < TEMPERATURE_MIN)
-  {
-    printf("Temperature %.2f crossed minimum threshold value! Increase the temperature of the system.\n", temperature);
-    return 0;
-  }
-  else if(temperature > TEMPERATURE_MAX)
-  {
-    printf("Temperature %.2f crossed maximum threshold value! Reduce the temperature of the system.\n", temperature);
-    return 0;
-  }
-  else
-  {
-    printf("Temperature %.2f OK\n", temperature);
-    return 1;
-  }
-}
-
 float statusOfCharge(float soc)
 {
   if(soc < SOC_MIN)
