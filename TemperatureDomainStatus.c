@@ -3,8 +3,8 @@
 int temperatureMax[]= {TEMPERATURE_RESIDENTIAL_MAX, TEMPERATURE_CONSUMER_MAX, TEMPERATURE_EV_MAX};
 /*
  **********************************************************************************************************************
- * Service name         : temperatureSectorStatus
- * Syntax               : int temperatureSectorStatus(float temperature, enum MajorDomain domainType, int temperatureSIUnit) 
+ * Service name         : IsTemperatureOk
+ * Syntax               : int IsTemperatureOk(float temperature, enum MajorDomain domainType, int temperatureSIUnit) 
  * param[in]            : temperature
  * param[in]            : domainType
  * param[in]            : temperatureSIUnit
@@ -12,7 +12,7 @@ int temperatureMax[]= {TEMPERATURE_RESIDENTIAL_MAX, TEMPERATURE_CONSUMER_MAX, TE
  * Description          : Function that verifies the requested domain validity and its maximum range
  **********************************************************************************************************************
  */
-int temperatureSectorStatus(float temperature, enum MajorDomain domainType, int temperatureSIUnit) 
+int IsTemperatureOk(float temperature, enum MajorDomain domainType, int temperatureSIUnit) 
 {
 	int retStatus = 1;
 	/* choose respective domain */
