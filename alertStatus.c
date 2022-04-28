@@ -13,7 +13,7 @@ void warningsGenerator(toleranceRange_st warningType)
 	  printf("Requested temperature in Fahrenheit %f \n",convTemp);
   }
   ParamToString(warnMessage,warningType);
-  printf(" Breached value - %f \t %s \n",warningType.inputParam, warnMessage);
+  printf(" Breached value - %f \t %s \n",warningType.inputParameter, warnMessage);
 }
 
 unsigned int controllerAction()
