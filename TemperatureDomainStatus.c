@@ -16,7 +16,7 @@ int IsTemperatureOk(float temperature, enum MajorDomain domainType, int temperat
 {
 	int retStatus = 1;
 	/* choose respective domain */
-	if( domainType < ( (int)MAXNUMBEROFSECTORS ) )
+	if( domainType < ( (int)NUM_OF_DOMAINS ) )
 	{
 		retStatus = temperatureStatus(temperature, (float)temperatureMax[domainType], temperatureSIUnit);
 	}
