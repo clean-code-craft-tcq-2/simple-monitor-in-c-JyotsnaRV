@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "batteryHealthChecker.h"
+#include "BmsCheckers.h"
 
 /* Drive functions to test the battery health based on the given parameters */
 int main() {
