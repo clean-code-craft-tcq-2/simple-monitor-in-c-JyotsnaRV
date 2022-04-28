@@ -43,9 +43,9 @@ typedef struct
 }toleranceRange_st;
 
 /* Declarations */
-float IsTemperatureOk(float temperature,enum MajorDomain domainType, int temperatureSIUnit);
-float statusOfCharge(float soc);
-float rateOfCharge(float chargeRate);
+int IsTemperatureOk(float temperature,enum MajorDomain domainType, int temperatureSIUnit);
+int statusOfCharge(float soc);
+int rateOfCharge(float chargeRate);
 int temperatureStatus(float temperature, float compareTemp, int tempSIUnit) ;
 
 toleranceRange_st checkTolerance(toleranceRange_st range);
