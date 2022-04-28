@@ -4,7 +4,7 @@
 /*
  **********************************************************************************************************************
  * Service name         : batteryIsOk
- * Syntax               : int batteryIsOk(float temperature, float soc, float chargeRate)
+ * Syntax               : int batteryIsOk(float temperature, float soc, float chargeRate, enum MajorDomain domain, int temperatureSIUnit)
  * param[in]            : temperature
  * param[in]            : soc
  * param[in]            : chargeRate
@@ -13,6 +13,6 @@
  * Description          : Function which checks the battery health based on temperature, state of charge and charge rate
  ***********************************************************************************************************************
  */
-int batteryIsOk(float temperature, float soc, float chargeRate) {
+int batteryIsOk(float temperature, float soc, float chargeRate, enum MajorDomain domain, int temperatureSIUnit) {
   return ( (IsTemperatureOk(temperature,domain,temperatureSIUnit)) && (statusOfCharge(soc)) && (rateOfCharge(chargeRate)) );
 }
