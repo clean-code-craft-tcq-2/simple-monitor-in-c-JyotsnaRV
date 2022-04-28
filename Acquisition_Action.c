@@ -4,15 +4,15 @@
 accumulateRange_st dataRange;
 /*
  **********************************************************************************************************************
- * Service name         : dataAccumalator
- * Syntax               : void dataAcquisition(toleranceRange_st range)
+ * Service name         : dataAccumulator
+ * Syntax               : void dataAccumulator(toleranceRange_st range)
  * param[in]            : range
  * return               : None
- * Description          : Program to check and accumalte the required BMS data 
+ * Description          : Program to check and consolidate the required BMS data 
  **********************************************************************************************************************
  */
 
-void dataAcquisition(toleranceRange_st range)
+void dataAccumulator(toleranceRange_st range)
 {
   warningsGenerator(range);
   (void)controllerAction();
