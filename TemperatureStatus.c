@@ -17,17 +17,17 @@ int temperatureStatus(float temperature, float compareTemp, int tempSIUnit)
 	int retStatus = 1;
 	toleranceRange_st tempRange;
 	/* Check if the temperature is out of range */
-	if((temperature>(float)TEMPERATURE_MIN) && (temperature > cmprTemperature))
+	if((temperature>(float)TEMPERATURE_MIN) && (temperature > compareTemp))
 	{
 		retStatus = 0;
-                printf("temperature %f has breached the expected range(%d - %f)celcius!\n",temperature,TEMPERATURE_MIN,cmprTemperature);
+                printf("temperature %f has breached the expected range(%d - %f)celcius!\n",temperature,TEMPERATURE_MIN,compareTemp);
 		tempRange.minTolerance = (float)TEMPERATURE_MIN;
-		tempRange.maxTolerance = cmprTemperature;
+		tempRange.maxTolerance = compareTemp;
 		tempRange.paramType = TEMPERATURE;
-		tempRange.inputParam = temperature;
-		tempRange.tempUnitConv = tempUnit;
+		tempRange.inputParameter = temperature;
+		tempRange.tempUnitConv = tempSIUnit;
 		tempRange = checkTolerance(tempRange);
-		dataRange.tempInputParam = tempRange.inputParam;
+		dataRange.tempInputParam = tempRange.inputParameter;
 		dataRange.tempMinBreach = tempRange.minTolerance;
 		dataRange.tempMaxBreach = tempRange.maxTolerance;
 		dataAcquisition(tempRange);
