@@ -2,7 +2,7 @@
 #include "Data_Acquisition_Report.h"
 
 unsigned int acqReportCnt;
-extern acqRange_st dataRange;
+extern accumulateRange_st dataRange;
 void warningsGenerator(toleranceRange_st warnType)
 {
   float convTemp = 0.0;
