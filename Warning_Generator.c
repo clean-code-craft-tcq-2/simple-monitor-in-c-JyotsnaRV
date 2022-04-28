@@ -3,7 +3,7 @@
 
 const char* MinToleranceNames[] = {"Low_Temperature", "Approaching_discharge", "LOW_ROC"};
 const char* MaxToleranceNames[] = {"High_Temperature_Charging_Paused", "Approaching_charge_peak", "HIGH_ROC"};
-extern acqRange_st dataRange;
+extern accumulateRange_st dataRange;
 toleranceRange_st checkTolerance(toleranceRange_st range)
 {
   range.minTolerance += CALCTOLERANCE(range.minTolerance);
