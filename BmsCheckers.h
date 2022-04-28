@@ -52,6 +52,6 @@ toleranceRange_st checkTolerance(toleranceRange_st range);
 void warningsGenerator(toleranceRange_st warningType);
 void ParamToString(char* bffr, toleranceRange_st inputDetail);
 void dataAcquisition(toleranceRange_st range);
-unsigned int controlAction(void);
+unsigned int controllerAction(void);
 
 #endif /* BMS_CHECKERS_H */
