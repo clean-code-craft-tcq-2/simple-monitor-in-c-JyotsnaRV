@@ -46,6 +46,7 @@ typedef struct
 
 /* Declarations */
 int IsTemperatureOk(float temperature,enum MajorDomain domainType, int temperatureSIUnit);
+int batteryIsOk(float temperature, float soc, float chargeRate, enum MajorDomain domain, int temperatureSIUnit);
 int statusOfCharge(float soc);
 int rateOfCharge(float chargeRate);
 int temperatureStatus(float temperature, float compareTemp, int tempSIUnit) ;
