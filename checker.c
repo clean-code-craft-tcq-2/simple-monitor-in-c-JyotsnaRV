@@ -10,9 +10,9 @@ int main() {
   assert(!batteryIsOk(-0.5, 75, 0.9,RESIDENTIAL,FAHR));
   assert(!batteryIsOk(45.5, 15, 0.6,CONSUMER,CEL));
   assert(!batteryIsOk(25, 85, 0,EV,FAHR));
-  assert(!batteryIsOk(25, 15, 0,RESIDENTIAL,CEL));
-  assert(!batteryIsOk(25, 65, 0,CONSUMER,CEL));
-  assert(!batteryIsOk(25, 85, 0.9,CONSUMER,CEL));
+  assert(!batteryIsOk(25, 15, 0,RESIDENTIAL,FAHR));
+  assert(!batteryIsOk(25, 65, 0,RESIDENTIAL,FAHR));
+  assert(!batteryIsOk(25, 85, 0.9,CONSUMER,FAHR));
   
   /* Positive test case - BMS Passed (Temperature, Soc and Charge rate is within expected range) */
   assert(!batteryIsOk(80, 85, 0,RESIDENTIAL,FAHR));
