@@ -3,17 +3,17 @@
 
 unsigned int accumulateReportCnt;
 extern accumulateRange_st dataRange;
-void warningsGenerator(toleranceRange_st warnType)
+void warningsGenerator(toleranceRange_st warningType)
 {
   float convTemp = 0.0;
-  char warnMessage[MAX_WARNING_TEXT_CHARS];
-  if(warnType.tempUnitConv == FAHR)
+  char warnMessage[WARNING_MSG_CHAR];
+  if(warningType.tempUnitConv == FAHR)
   {
-	  convTemp = CELTOFAHR(warnType.inputParam);
+	  convTemp = CELTOFAHR(warningType.inputParameter);
 	  printf("Requested temperature in Fahrenheit %f \n",convTemp);
   }
-  ParamToString(warnMessage,warnType);
-  printf(" Breached value - %f \t %s \n",warnType.inputParam, warnMessage);
+  ParamToString(warnMessage,warningType);
+  printf(" Breached value - %f \t %s \n",warningType.inputParam, warnMessage);
 }
 
 unsigned int controllerAction()
