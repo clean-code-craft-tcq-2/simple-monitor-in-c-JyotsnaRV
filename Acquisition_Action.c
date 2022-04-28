@@ -1,7 +1,7 @@
 #include "BmsCheckers.h"
 #include "Data_Acquisition_Report.h"
 
-ackRange_st dataRange;
+accumulateRange_st dataRange;
 /*
  **********************************************************************************************************************
  * Service name         : dataAccumalator
