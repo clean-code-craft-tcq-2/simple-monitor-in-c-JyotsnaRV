@@ -1,7 +1,7 @@
 #include "BmsCheckers.h"
 #include "Data_Acquisition_Report.h"
 
-extern acqRange_st dataRange;
+extern accumulateRange_st dataRange;
 /*
  **********************************************************************************************************************
  * Service name         : rateOfCharge
