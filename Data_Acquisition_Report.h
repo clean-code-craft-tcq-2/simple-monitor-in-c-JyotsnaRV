@@ -20,6 +20,6 @@ typedef struct
 	int breachMinType; /* can be maintained as 1 byte integer in future update */
 	int breachMaxType; /* can be maintained as 1 byte integer in future update */
 	int retstatus;
-}acqRange_st;
+}accumulateRange_st;
 
 #endif /* DATA_ACQUISITION_REPORT_H */
