@@ -49,7 +49,7 @@ float rateOfCharge(float chargeRate);
 int temperatureStatus(float temperature, float compareTemp, int tempSIUnit) ;
 
 toleranceRange_st checkTolerance(toleranceRange_st range);
-void warningGenerator(toleranceRange_st warningType);
+void warningsGenerator(toleranceRange_st warningType);
 void ParamToString(char* bffr, toleranceRange_st inputDetail);
 void dataAcquisition(toleranceRange_st range);
 unsigned int controlAction(void);
